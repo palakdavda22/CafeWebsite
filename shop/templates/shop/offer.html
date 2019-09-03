@@ -1,0 +1,310 @@
+<!-- This worked for me -->
+{% load static %}
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>Offers</title>
+
+</head>
+<body>
+<!--
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/shop">My Awesome Cart</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/shop">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/shop/about">About Us</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/shop/offer">Offer</a>
+      </li>
+
+	  <li class="nav-item">
+        <a class="nav-link" href="/shop/helpcenter">Help Center</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/shop/contact">Contact Us</a>
+      </li>
+
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    <button type="button" class="btn btn-secondary mx-2" id="popcart" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.">
+
+
+  Cart(<span id="cart">0</span>)
+</button>
+  </div>
+</nav>
+  -->
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <ul class="navbar-nav ml-auto">
+        <a class="navbar-brand" href="#">
+            <img src="https://images.mcdelivery.co.in/hardcastle-restaurants-pvt-ltd/image/upload/NewWebsiteResource/assets/img/Mcd_logo_web.png"
+                 width="90" height="50"/> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </ul>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/shop">ORDER <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/shop/about"> | ABOUT US </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/shop/offer"> | OFFERS </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/shop/helpcenter"> | HELP CENTER </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/shop/contact"> | CONTACT </a>
+            </li>
+
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <button type="button" class="btn btn-secondary mx-2" id="popcart" data-container="body" data-toggle="popover"
+                data-placement="bottom" data-html="true" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.">
+
+
+            Cart(<span id="cart">0</span>)
+        </button>
+    </div>
+</nav>
+<div class="container bg-light">
+    <h2 class="py-4" style="font-family:cursive;">Offers</h2>
+    <p></p>
+    <h4>McDelivery coupons</h4>
+    <div class="row text-center">
+        <div class="col-3">
+            <div class="card" style="width: 250px; height: 350px;">
+                <img src='{% static "shop/mdc.jpg" %}' class="card-img-top mx-auto" style="width: 70px;height: 70px;">
+                <div class="card-body">
+                    <h5 class="card-title">Gofree</h5>
+                    <p class="card-text">Free Delivery For All Orders.Enjoy eating!</p>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Know More</a>
+                        <p>--------------------------</p>
+                        <a href="#" class="card-link">Please login to avail offers</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------------>
+        <div class="col-3">
+            <div class="card" style="width: 250px; height: 350px;">
+                <img src='{% static "shop/mdc.jpg" %}' class="card-img-top mx-auto" style="width: 70px;height: 70px;">
+                <div class="card-body">
+                    <h5 class="card-title">Mcd299</h5>
+                    <p class="card-text">Get Mcchicken Burger Free On Order Above Rs.299</p>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Know More</a>
+                        <p>--------------------------</p>
+                        <a href="#" class="card-link">Please login to avail offers</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- -------------------------------------------------------------------------------------------------------------- -->
+        <div class="col-3">
+            <div class="card" style="width: 250px; height: 350px;">
+                <img src='{% static "shop/mdc.jpg" %}' class="card-img-top mx-auto" style="width: 70px;height: 70px;">
+                <div class="card-body">
+                    <h5 class="card-title">Web325</h5>
+                    <p class="card-text">Order For Rs 325 And Get A Burger Free</p>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Know More</a>
+                        <p>--------------------------</p>
+                        <a href="#" class="card-link">Please login to avail offers</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------------>
+        <div class="col-3">
+            <div class="card" style="width: 250px; height: 350px;">
+                <img src='{% static "shop/mdc.jpg" %}' class="card-img-top mx-auto" style="width: 70px;height: 70px;">
+                <div class="card-body">
+                    <h5 class="card-title">Mcd375</h5>
+                    <p class="card-text">Get Any Burger Free On Order Above Inr 375</p>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Know More</a>
+                        <p>--------------------------</p>
+                        <a href="#" class="card-link">Please login to avail offers</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------row2----------------------------------------------------------------------->
+    <div class="row mt-4 text-center">
+        <div class="col-3">
+            <div class="card" style="width: 250px; height: 350px;">
+                <img src='{% static "shop/mdc.jpg" %}' class="card-img-top mx-auto" style="width: 70px;height: 70px;">
+                <div class="card-body">
+                    <h5 class="card-title">Pt399</h5>
+                    <p class="card-text">Get Any Burger Free On Purchase Above Rs.399</p>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Know More</a>
+                        <p>--------------------------</p>
+                        <a href="#" class="card-link">Please login to avail offers</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------------>
+    </div>
+
+    <!------------------------------------------------row3------------------------------------------------------------------>
+
+    <div class="row py-4 text-center">
+        <div class="col-3">
+            <div class="card" style="width: 250px; height: 350px;">
+                <img src='{% static "shop/mdc.jpg" %}' class="card-img-top mx-auto" style="width: 70px;height: 70px;">
+                <div class="card-body">
+                    <h5 class="card-title">Paytm</h5>
+                    <p class="card-text">Up to ₹225 Cashback.</p>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Know More</a>
+                        <p>--------------------------</p>
+                        <a href="#" class="card-link">Please login to avail offers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------------>
+        <div class="col-3">
+            <div class="card " style="width: 250px; height: 350px;">
+                <img src='{% static "shop/mdc.jpg" %}' class="card-img-top mx-auto" style="width: 70px;height: 70px;">
+                <div class="card-body">
+                    <h5 class="card-title">Google Pay</h5>
+                    <p class="card-text">Earn Cashback between ₹150 on minimum order of ₹99</p>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Know More</a>
+                        <p>--------------------------</p>
+                        <a href="#" class="card-link">Please login to avail offers</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="container-fluid bg-dark py-5">
+        <div class="container">
+            <div class="row text-white">
+                <div class="col-3 ">
+                    <ul class="list-unstyled">
+                        <li>PRIVACY POLICY</li>
+                        <li>FEEDBACK</li>
+                        <li>TERM AND CONDITIONS</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <ul class="list-unstyled">
+                        <li>CORPORATE WEBSITE</li>
+                        <li>FAQ</li>
+                        <li>BUG BOUNTY</li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <h4 class="text-white"> Are you lovin'it?</h4>
+                    <div class="row">
+                        <div class="col-3">
+                            <p class="text-white">FOLLOW US</p>
+                            <a><i class="fab fa-facebook-f "></i></a>&nbsp;&nbsp;
+                            <a><i class="fab fa-twitter "></i></a>&nbsp;&nbsp;
+                            <a><i class="fab fa-instagram "></i></a>&nbsp;&nbsp;
+                        </div>
+                        <div class="col-4">
+                            <p class="text-white">DOWNLOAD APP</p>
+                            <i class="fab fa-apple "></i>&nbsp;&nbsp;
+                            <i class="fab fa-android "></i>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="page-footer bg-dark">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            <h6 class="text-white">Copyright 2017 H.R.P.L</h6>
+        </div>
+    </div>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,327 @@
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>{% block title%} {% endblock %}</title>
+    <style>
+      {% block css %} {% endblock %}
+
+    .bgimg{
+        width: 100% !important;
+    }
+
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <ul class="navbar-nav ml-auto">
+        <a class="navbar-brand" href="#">
+            <img src="https://images.mcdelivery.co.in/hardcastle-restaurants-pvt-ltd/image/upload/NewWebsiteResource/assets/img/Mcd_logo_web.png"
+                 width="90" height="50"/>
+        </a>
+        <!--    <a class="navbar-brand" href="/shop">My Awesome Cart</a>-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </ul>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/shop">ORDER <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/shop/about"> | ABOUT US </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/shop/offer"> | OFFERS </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/shop/helpcenter"> | HELP CENTER </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/shop/contact"> | CONTACT </a>
+            </li>
+
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <button type="button" class="btn btn-secondary mx-2" id="popcart" data-container="body" data-toggle="popover"
+                data-placement="bottom" data-html="true" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.">
+
+
+            Cart(<span id="cart">0</span>)
+        </button>
+    </div>
+</nav>
+<div class="bgimg">
+    <img src="https://images.mcdelivery.co.in/hardcastle-restaurants-pvt-ltd/image/upload/q_auto:low,fl_lossy,w_1366/v1567216846/WebBanner/Banner83.jpg" class="bgimg"/>
+</div>
+{% block body %} {% endblock %}
+<footer>
+    <div class="container-fluid bg-dark py-5">
+        <div class="container">
+            <div class="row text-white">
+                <div class="col-3 ">
+                    <ul class="list-unstyled">
+                        <li>PRIVACY POLICY</li>
+                        <br>
+                        <li>FEEDBACK</li>
+                        <br>
+                        <li>TERMS AND CONDITIONS</li>
+                        <br>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <ul class="list-unstyled">
+                        <li>CORPORATE WEBSITE</li>
+                        <br>
+                        <li>FAQ</li>
+                        <br>
+                        <li>BUG BOUNTY</li>
+                        <br>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <h4 class="text-white"> Are you lovin'it?</h4>
+                    <br>
+                    <div class="row">
+                        <div class="col-3">
+                            <p class="text-white">FOLLOW US</p>
+                            <a><i class="fab fa-facebook-f "></i></a>&nbsp;&nbsp;
+                            <a><i class="fab fa-twitter "></i></a>&nbsp;&nbsp;
+                            <a><i class="fab fa-instagram "></i></a>&nbsp;&nbsp;
+                        </div>
+                        <div class="col-4">
+                            <p class="text-white">DOWNLOAD APP</p>
+                            <i class="fab fa-apple "></i>&nbsp;&nbsp;
+                            <i class="fab fa-android "></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-footer bg-dark">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            <h6 class="text-white">Copyright 2017 H.R.P.L</h6>
+        </div>
+    </div>
+    <main role="main">
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron bg-dark">
+            <div class="container">
+                <p class="text-white">
+                <h1 class="display-5 text-white">Burgers and Wraps That Are Made For India</h1>
+
+                <p class="text-white">Today, it won’t be an exaggeration to say that burgers and wraps have
+                    revolutionized the food industry.
+                    We don’t want to go through the trouble of dealing with curries and accompaniments, that’s just a
+                    hassle
+                    – we want our food in easily consumable, and rightly so. Our hectic lifestyle calls for less mess on
+                    our plates.</p>
+                <br><br>
+                <p class="text-white">Thankfully, burgers and wraps have solved this problem for us. With each bite, we
+                    get small dosages of
+                    all our nutrient needs – carbohydrates from the wheat and bread, protein from the patty, and
+                    vitamins
+                    from the veggies. You may be working on your laptop or are on the go to meet someone, these two
+                    items
+                    make sure you have a filling meal without all the frill.</p>
+                <br><br>
+                <p class="text-white">And when we think of burgers and wraps, especially burgers, the top name that
+                    comes to most minds is
+                    McDonald’s. And why not, after all they were the first to offer India a taste of this millennial’s
+                    favourite food item.</p>
+                <br><br>
+                <p class="text-white">Ever since its entry into Indian markets in 1996, McDonald’s has played a
+                    definitive role in molding the
+                    eating habits of today’s millennials. Not just the taste, the McDonald’s burger price has also been
+                    approved by patrons over the years. After burgers, they also launched iconic wraps that became
+                    instant
+                    hits and are easily available burger online. Let’s take a look at some burgers and wraps which,
+                    owing to
+                    their awesomeness, have found a permanent place in the McDonald’s menu.</p>
+                <br><br>
+                <h1 class="display-5 text-white">McAloo Tikki Burger</h1>
+                <p class="text-white">The first original ‘Indian Burger’, this innovative McDonald’s menu item has been
+                    an ever present
+                    feature of McDonald’s India (South & West) menu ever since the chain was first established in the
+                    country. Almost two decades later and counting, even today, a McDonald’s burger means McAloo Tikki
+                    burger for many. The McAloo Tikki burger was curated by McDonald’s chefs who wanted Indian customers
+                    to
+                    feel a sense of familiarity when they walk into McDonald’s for the first time ever with pocket
+                    friendly
+                    McAloo Tikki prices. What better way to achieve that response than by encasing one of India’s iconic
+                    snacks, the aloo tikki in between two buns? The rest, as they say, is history.</p>
+                <br><br>
+                <h1 class="display-5 text-white">Chicken Maharaja Mac and veg Maharaja Mac Burgers</h1>
+                <p class="text-white">The Maharaja Mac is McDonald’s India – South and West’s answer to the Big Mac.
+                    This double decker burger
+                    is a sight to behold, isn’t it? Ever since it was introduced in the earliest McDonald’s outlets in
+                    India, it has cemented its place in the McDonald’s menu, and in the hearts of whoever has gorged on
+                    one
+                    of these. Complete with jalapenos, iceberg lettuce, tomatoes, onions, cheddar cheese and McDonald’s
+                    sauces to go with two layers of patties, this burger delivers a truly wholesome meal. And it is not
+                    just
+                    the name, the taste of Chicken Maharaja Mac and Veg Maharaja Mac is fit for the big Indian hearts as
+                    well. You can easily get online food delivery with McDonald’s burger price and offers using the
+                    McDelivery app.</p>
+                <br><br>
+                <h1 class="display-5 text-white">McSpicy Chicken and McSpicy Paneer Burgers</h1>
+                <p class="text-white">Spices are an important part of the Indian culinary arts. Naturally, we have
+                    developed an affinity for
+                    spicy foods. With the McSpicy Chicken and McSpicy Paneer burger, McDonald’s has crafted something
+                    that
+                    very deftly finds the balance between the Eastern and Western cuisines. Although in the shape of and
+                    with all the properties of a burger, the McSpicy Chicken burger and the McSpicy Paneer Burger have a
+                    taste which is essentially Indian. One of the highlights of this McDonald’s burger is the crispy
+                    coated
+                    patty which is soft and succulent on the inside.</p>
+                <br><br>
+                <h1 class="display-5 text-white">Big Spicy Chicken and Big Spicy Paneer Wraps</h1>
+                <p class="text-white">The Big Spicy Wrap recently went through a makeover, one of the best burger with
+                    adjustments made to its
+                    size and level of spiciness. The new and improved Big Spicy Chicken and Big Spicy Paneer Wrap retain
+                    the
+                    component that made them popular in the first place, the crisp patty. The whole wheat wrap
+                    complements
+                    the filling, and there are several health benefits associated with whole wheat products, and is far
+                    healthier than ‘maida’ alternatives. McDonald’s wraps have their own touch of Indian kitchens,
+                    thanks to
+                    the array of spices that give it its unique and distinctive taste. These are hands down the best
+                    wraps
+                    you will find.</p>
+                <br><br>
+                <p class="text-white">The McDonald’s menu is full of many uniquely designed products. You can order food
+                    online and can pair
+                    up these burgers and wraps with a wide variety of snacks, beverages and desserts. For example, if
+                    the
+                    spiciness of the McSpicy Burger gets to you, you can always have a sip of Cold Coffee, or Double
+                    Chocolate Frappe to cool your tongue down. You can also pair these items with McVeggie Burger, McEgg
+                    Burger, Mexican McAloo Tikki Burger ,Chicken Nuggets, French Fries, Masala Wedges or any number of
+                    options from the McDonald’s snack menu. You can explore the burger menu. Also, if one of your
+                    friends is
+                    not feeling like having a burger, there are options like Salad Wrap,Big Spicy Paneer wrap, Chicken
+                    kebab
+                    wrap, Big spicy chicken wrap, McDonald’s Chatpata Naan Aloo & McDonald’s Chatpata Naan Kebab.</p>
+                <br><br>
+                <p class="text-white">Now did you know that you can now order your favorite McDonald’s burgers online
+                    remotely via the
+                    McDelivery website or through the McDelivery App? Through this portal, you can browse through the
+                    menu
+                    items, check their nutrition details, and even customize your order to your liking. Need an extra
+                    slice
+                    of cheese? No problem. Don’t want tomatoes in your burger? No problem again. Take your time and
+                    order
+                    exactly what you want. Additionally, the app supports a number of payment options aside from Credit,
+                    Debit Cards and Net Banking, including online wallets such as PhonePe, PayTm and Amazon Pay. And did
+                    we
+                    say McDonald’s burger price will never disappoint you either. The prices, in combination with the
+                    payment wallet offers, make for a great deal.</p>
+                <br><br>
+                <p class="text-white">You can also check out more amazing McDonald’s products from other categories like
+                    Rice Bowls, Rice Bowl
+                    Combos, Meals, Burgers & Wraps, Beverages, Sides, Desserts & Breakfast at McDelivery.</p>
+                </p>
+                <br><br>
+                <h1 class="display-5 text-white">McDonald’s Burgers Price List</h1><br>
+                <table style="width:30%; border: 1px solid white;" class="text-white">
+                    <tr>
+                        <th style="border: 1px solid white;">Product Name</th>
+                        <th style="border: 1px solid white;">Price</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid white;">1. Mexican McAlooTikki Burger</td>
+                        <td style="border: 1px solid white;">₹ 55</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid white;">2. Chatpata Naan - Aloo</td>
+                        <td style="border: 1px solid white;">₹ 64</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid white;">3. Chatpata Naan - Kebab</td>
+                        <td style="border: 1px solid white;">₹ 79</td>
+                    </tr>
+                    <tr>
+                        <th style="border: 1px solid white;">4. Chicken Kebab Burger</th>
+                        <th style="border: 1px solid white;">₹ 83</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid white;">5. McVeggie Burger</td>
+                        <td style="border: 1px solid white;">₹ 107</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid white;">6. American Cheese Supreme - Veg</td>
+                        <td style="border: 1px solid white;">₹ 121</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid white;">7. McChicken Burger</td>
+                        <td style="border: 1px solid white;">₹ 121</td>
+                    </tr>
+                    <tr>
+                        <th style="border: 1px solid white;">8. McSpicy Paneer Burger</th>
+                        <th style="border: 1px solid white;">₹ 163</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid white;">9. McSpicy Chicken Burger</td>
+                        <td style="border: 1px solid white;">₹ 169</td>
+                    </tr>
+                </table>
+                <br>
+                <h1 class="display-5 text-white">McDonald’s Wraps Price List</h1><br>
+                <table style="width:30%; border: 1px solid white;" class="text-white">
+                    <tr>
+                        <th style="border: 1px solid white;">Product Name</th>
+                        <th style="border: 1px solid white;">Price</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid white;">1. Salad Wrap</td>
+                        <td style="border: 1px solid white;">₹ 132</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid white;">2. Big Spicy Paneer Wrap</td>
+                        <td style="border: 1px solid white;">₹ 200</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid white;">3. Big Spicy Chicken Wrap</td>
+                        <td style="border: 1px solid white;">₹ 211</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- /container -->
+
+    </main>
+
+</footer>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+{% block js %} {% endblock %}
+</body>
+</html>
